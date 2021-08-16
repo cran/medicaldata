@@ -1,0 +1,48 @@
+---
+title: Introduction
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The {medicaldata} package is purely a data package, for the purpose of collecting well-documented medical datasets in one package for teaching to medical students, residents, fellows, nurses, pharmacists, physician assistants, and anyone else who wants to learn R for use with medical data. 
+
+The de-identified datasets included in this package come from a variety of sources, including:
+
+- donations by generous authors
+- sourcing from other R packages
+- the TSHS (Teaching Statistics in the Health Sciences) project, which can be found at [link](https://www.causeweb.org/tshs/), and is sponsored by the American Statistical Association. 
+- reconstruction of datasets from historically important clinical studies, like the scurvy study by James Lind, and the first clinical trial of Streptomycin in Pulmonary Tuberculosis.
+
+Each dataset is documented in three ways:
+
+- a help file, which can be accessed with `help('dataset_name')` from the Console pane 
+- a pdf document describing the study, found at the Github README page [here](https://github.com/higgi13425/medicaldata)
+- a pdf codebook, found at the Github README page [here](https://github.com/higgi13425/medicaldata)
+
+Currently, the datasets included are:
+ 
+- Streptomycin in Tuberculosis (`strep_tb`)
+- Scurvy RCT (`scurvy`)
+- Indomethacin RCT to Prevent Post-ERCP Pancreatitis (`indo_rct`)
+- Sulindac RCT for polyps (`polyps`)
+- Covid Testing (`covid_testing`)
+- Blood Storage (prostate cancer) (`blood_storage`)
+- Cytomegalovirus in BMT (`cytomegalovirus`)
+- Esophageal cancer (`esoph_ca`)
+- Laryngoscope (`laryngoscope`)
+- Licorice gargle (`licorice_gargle`)
+- Obstetric Periodontal Therapy (`opt`)
+- Smartpill (`smartpill`)
+- Supraclavicular (`supraclavicular`)
+- Indomethacin Pharmacokinetics (`indometh`)
+- Theophylline Pharmacokinetics (`theoph`)
